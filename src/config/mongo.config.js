@@ -8,7 +8,7 @@ const connectDB = async () => {
         await mongoose.connect(process.env.MONGO_URL)
         console.log("MongoDB ulandi ✅")
     } catch (error) {
-        console.log("Database'ga ulanishda xatolik")
+        console.log("Database'ga ulanishda xatolik ❌")
         process.exit(1)
     }
 }
